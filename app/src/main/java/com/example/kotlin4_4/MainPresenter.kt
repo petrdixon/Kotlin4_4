@@ -11,6 +11,8 @@ class MainPresenter (val converter: Converter) : MvpPresenter<MainView>() { // c
     fun startConvert(){
         val textStatus = converter.convertJpgToPng() // запускаю конвертацию файла
         viewState.displayStatus(textStatus) // показываю статус конвертации на экране
+
+        println("test")
     }
 
 
